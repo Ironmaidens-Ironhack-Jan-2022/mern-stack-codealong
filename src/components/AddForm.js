@@ -5,7 +5,7 @@ export default function AddAppartmentForm(props) {
     const {addNewApartment} = props
 
     return (
-        <div style={{display: "flex", justifyContent: "center", marginTop: "40px"}}>
+        <div>
         <form onSubmit={addNewApartment}>
           <label>Title</label>
           <br/>
@@ -19,7 +19,7 @@ export default function AddAppartmentForm(props) {
           <br/>
           <input name='img' type="text" />
           <br/>
-          <button style={{margin: "10px 25px", backgroundColor: "#86c4db", borderRadius: "10px"}}>Add new apartment</button>
+          <button style={{margin: "10px", backgroundColor: "#86c4db", borderRadius: "10px"}}>Add new apartment</button>
         </form>
       </div>
     )

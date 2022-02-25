@@ -26,6 +26,7 @@ export default function CreateApartment() {
           console.log("Something went wrong while creating a new apartment", error)
       }
   }
+  
   return (
     <div>
       <AddAppartmentForm addNewApartment={addNewApartment}/>

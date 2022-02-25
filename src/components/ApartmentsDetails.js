@@ -9,12 +9,10 @@ export default function ApartmentsDetails() {
   console.log(apartmentId)
   const [apartment, setApartment] = useState(null)
 
-
   useEffect(() => {
     axios
       .get(`https://ironbnb-m3.herokuapp.com/apartments/${apartmentId}`)
       .then((result) => {
-        console.log(result.data)
         setApartment(result.data);
       })
       .catch();
@@ -26,8 +24,9 @@ export default function ApartmentsDetails() {
 
   return (
     <div>
-    <p>{apartment.title}</p>
-    <p>{apartment.pricePerDay}</p>
+      <p>{apartment.title}</p>
+      <p>{apartment.pricePerDay}</p>
+      <img src={apartment.img} alt="apartment" style={{width: "300px"}}></img>
     </div>
   )
 }
