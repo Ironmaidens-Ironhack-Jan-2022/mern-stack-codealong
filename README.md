@@ -1,3 +1,7 @@
+# Goal
+
+Learn how to connect React app to the backend.
+
 # Planning
 https://whimsical.com/ironmaidensbnb-MVw1gkTJrekF2QTaEKCMJU
 
@@ -24,9 +28,7 @@ path="/apartments/create"
   --> form (controlled component)
   --> call API   (POST /apartments + body)
   
-## Available Scripts
-
-In the project directory, you can run:
+## In the project directory, you can run:
 
 ### `npm start`
 
